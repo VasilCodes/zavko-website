@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VasilCodes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>zavko's Website</title>
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
   <style>
@@ -32,16 +32,9 @@
       top: 0; left: 0;
       width: 100%;
       height: 100%;
-      background: repeating-radial-gradient(circle at center, yellow 0, yellow 2px, transparent 3px, transparent 20px);
-      background-size: 200px 200px;
-      opacity: 0.08;
+      background: linear-gradient(to right, black 0%, #111 50%, black 100%);
+      opacity: 0.6;
       z-index: 0;
-      animation: moveSnakes 20s linear infinite;
-    }
-
-    @keyframes moveSnakes {
-      from { background-position: 0 0; }
-      to { background-position: 100% 100%; }
     }
 
     @keyframes fadeIn {
@@ -61,8 +54,10 @@
     .container {
       position: relative;
       display: flex;
+      flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
+      gap: 20px;
     }
 
     .buttons {
@@ -70,6 +65,7 @@
       flex-direction: column;
       gap: 20px;
       z-index: 1;
+      align-items: center; /* Center buttons horizontally */
     }
 
     .buttons button {
@@ -114,9 +110,14 @@
       pointer-events: auto;
     }
 
-    .info-box span {
-      color: yellow;
-      font-weight: bold;
+    .info-text {
+      font-size: 16px;
+      color: #fff;
+      margin-top: 20px;
+      text-align: center;
+      max-width: 600px;
+      font-style: italic;
+      color: rgba(255, 255, 0, 0.8);
     }
 
     footer {
@@ -130,19 +131,25 @@
   </style>
 </head>
 <body>
+
   <h1>⚡ VasilCodes ⚡</h1>
 
   <div class="container">
     <div class="buttons">
-      <button onmouseover="showInfo('Learn coding tricks, walkthroughs, and more on our YouTube channel! 🎓📺')" onmouseout="hideInfo()">🎥 YouTube Tutorials</button>
-      <button onmouseover="showInfo('Follow VasilCodes across social platforms for updates, tips, and fun! 📱🌍')" onmouseout="hideInfo()">🌐 Social Media</button>
-      <button onmouseover="showInfo('Get to know the developer behind the code – Vasil, aka zavko. 👨‍💻🧠')" onmouseout="hideInfo()">👤 About Me</button>
-      <button onmouseover="showInfo('Level up with personalized sessions and expert feedback! 💻🧠')" onmouseout="hideInfo()">🧠 Code Mentorship</button>
+      <button onmouseover="showInfo('Learn coding tricks, walkthroughs, and more on our YouTube channel! 🎓📺')" onmouseout="hideInfo()" onclick="window.location.href='youtube_tutorials/youtube_tutorials.html'">🎥 YouTube Tutorials</button>
+      <button onmouseover="showInfo('Follow VasilCodes across social platforms for updates, tips, and fun! 📱🌍')" onmouseout="hideInfo()" onclick="window.location.href='social.html'">🌐 Social Media</button>
+      <button onmouseover="showInfo('Get to know the developer behind the code – Vasil, aka zavko. 👨‍💻🧠')" onmouseout="hideInfo()" onclick="window.location.href='about.html'">👤 About Me</button>
+      <button onmouseover="showInfo('Level up with personalized sessions and expert feedback! 💻🧠')" onmouseout="hideInfo()" onclick="window.location.href='mentorship.html'">🧠 Code Mentorship</button>
     </div>
 
     <div class="info-box" id="infoBox">
       <p id="infoText"></p>
     </div>
+
+    <!-- New Paragraph about Website being New -->
+    <p class="info-text">
+      🚧 This website is still under development! Please bear with us as some features may not be fully functional. Thank you for your patience! 🙏
+    </p>
   </div>
 
   <footer>
