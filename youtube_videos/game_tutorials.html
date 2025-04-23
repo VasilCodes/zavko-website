@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Tutorials - zavko's Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Special Elite', cursive;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: yellow;
+      text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
+      margin-bottom: 40px;
+    }
+
+    .category {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .category h2 {
+      font-size: 28px;
+      color: yellow;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .video-container {
+      display: flex;
+      gap: 30px;
+      background-color: rgba(255, 255, 0, 0.1);
+      padding: 20px;
+      border: 1px solid yellow;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 0, 0.3);
+      max-width: 900px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .video-thumbnail {
+      width: 300px;
+      border-radius: 8px;
+      border: 2px solid yellow;
+    }
+
+    .video-info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .video-info h2 {
+      color: yellow;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .video-info p {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .more-info {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .more-info.show {
+      display: block;
+    }
+
+    a.more-link {
+      color: yellow;
+      cursor: pointer;
+      text-decoration: underline;
+      font-size: 16px;
+    }
+
+    .watch-button {
+      align-self: flex-end;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: black;
+      border: 2px solid yellow;
+      color: yellow;
+      font-family: 'Special Elite', cursive;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .watch-button:hover {
+      background-color: yellow;
+      color: black;
+      background-color: yellow;
+      color: black;
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    footer {
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎮 Game Tutorials</h1>
+
+  <!-- My Summer Car Category -->
+  
+  <h2>There aren't any game based tutorials yet!</h2>
+
+  <!--<div class="category">
+    <h2>🚗 My Summer Car Tutorials</h2>
+    <div class="video-container">
+      <img src="https://via.placeholder.com/300x180.png?text=My+Summer+Car" class="video-thumbnail" alt="My Summer Car Tutorial" />
+      <div class="video-info">
+        <h2>My Summer Car Basics</h2>
+        <p>Learn how to survive in My Summer Car by setting up your car and managing your resources.</p>
+        <a class="more-link" onclick="toggleMore('summerCarMore')">See more...</a>
+        <div id="summerCarMore" class="more-info">
+          <p>We will cover basic car setups, driving mechanics, and key tips for surviving the first few days in the game.</p>
+        </div>
+        <a href="https://www.youtube.com/" target="_blank" class="watch-button">🎬 Watch Video</a>
+      </div>
+    </div>
+  </div>-->
+
+  <!-- Schedule I Category -->
+  <!--<div class="category">
+    <h2>🗓️ Schedule I Tutorials</h2>
+    <div class="video-container">
+      <img src="https://via.placeholder.com/300x180.png?text=Schedule+I" class="video-thumbnail" alt="Schedule I Tutorial" />
+      <div class="video-info">
+        <h2>Schedule I Setup</h2>
+        <p>Learn how to set up and manage your tasks using Schedule I effectively.</p>
+        <a class="more-link" onclick="toggleMore('scheduleIMore')">See more...</a>
+        <div id="scheduleIMore" class="more-info">
+          <p>We will guide you through creating schedules, task management, and reminders to increase productivity.</p>
+        </div>
+        <a href="https://www.youtube.com/" target="_blank" class="watch-button">🎬 Watch Video</a>
+      </div>
+    </div>
+  </div>-->
+
+  <footer>&copy; 2025 VasilCodes, zavko</footer>
+
+  <script>
+    function toggleMore(id) {
+      document.getElementById(id).classList.toggle('show');
+    }
+  </script>
+
+</body>
+</html>
