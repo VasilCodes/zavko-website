@@ -35,5 +35,5 @@ For inquiries or feedback, feel free to reach out via the contact information pr
 
 ## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE.txt).
 
