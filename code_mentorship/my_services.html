@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Services - VasilCodes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Special Elite', cursive;
+      background-color: #000;
+      color: yellow;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    h1 {
+      font-size: 36px;
+      text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .services-box {
+      background-color: rgba(255, 255, 0, 0.1);
+      border: 2px solid yellow;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 800px;
+      text-align: left;
+      box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+    }
+
+    .service {
+      margin-bottom: 25px;
+    }
+
+    .service h2 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .service p {
+      font-size: 17px;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    a.back-btn {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: black;
+      color: yellow;
+      border: 2px solid yellow;
+      border-radius: 5px;
+      font-family: 'Special Elite', cursive;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    a.back-btn:hover {
+      background-color: yellow;
+      color: black;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>💼 My Services</h1>
+
+  <div class="services-box">
+
+    <div class="service">
+      <h2>👨‍💻 Developer</h2>
+      <p>Custom web, desktop, or mobile application development tailored to your needs. Clean code, secure architecture, and real-world usability always in mind.</p>
+    </div>
+
+    <div class="service">
+      <h2>🛠️ Software Engineering</h2>
+      <p>From planning to production, I offer complete engineering solutions — architecture design, code review, optimization, and debugging across multiple platforms.</p>
+    </div>
+
+    <div class="service">
+      <h2>🔍 Reverse Engineering</h2>
+      <p>Need to understand how a binary works or bypass protections for research or educational purposes? I provide reverse engineering for legacy code and low-level software analysis.</p>
+    </div>
+
+    <div class="service">
+      <h2>🎮 Game Hacking</h2>
+      <p>Creating game mods, trainers, memory manipulation tools, and in-depth cheat systems for educational and testing use. Deep experience in debugging, hooking, and bypassing anticheats (within legal scope).</p>
+    </div>
+
+    <div class="service">
+      <h2>🧠 Basic Hacking</h2>
+      <p>Ethical hacking services including vulnerability assessments, CTF training, and entry-level penetration testing tutorials — with an educational focus.</p>
+    </div>
+
+    <a class="back-btn" href="code_mentorship.html">⬅ Back to Home</a>
+  </div>
+
+  <footer>
+    &copy; 2025 VasilCodes, zavko
+  </footer>
+
+</body>
+</html>
