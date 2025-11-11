@@ -10,6 +10,8 @@ Welcome to the official repository for [zavko's Website](https://vasilcodes.gith
 - **Social Media**: Connect with me across various platforms.
 - **About Me**: Learn more about my background and expertise.
 - **Code Mentorship**: Discover how I can help you level up your coding skills.
+- **Autobiography**: Learn information about my life.
+- **Portfolio**: Look at the projects created throughout my life.
 
 ---
 
