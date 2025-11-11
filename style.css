@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    background-color: #c8c4c4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#translateBtn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    color: #222;  /* <-- Change this to any color you want */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    transition: background 0.2s, transform 0.2s;
+    display: block;
+    margin: auto;
+    width: 2.5rem;   /* adjust size */
+    height: 2rem;
+}
+
+#translateBtn:hover {
+    background: #f0f0f0;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    width: 90%;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #222;
+    text-align: center;
+}
+
+.button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    max-width: 300px; /* limit container width */
+}
+
+button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 0.5rem 0;   /* reduced vertical padding */
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1rem;     /* smaller font */
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #444;
+}
+
+.info-text {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    padding: 0 0.8rem;    /* smaller horizontal padding */
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #666;
+    font-size: 0.9rem;    /* slightly smaller text */
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.button-container:hover .info-text {
+    max-height: 180px;     /* slightly smaller max-height */
+    padding: 0.8rem;
+}
+
+.button-container + .button-container {
+    margin-top: 0.5rem;
+}
